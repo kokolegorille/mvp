@@ -27,17 +27,21 @@ MVP for testing textarea in live_view 0.13
 
 Phoenix 1.5.3
 
+```
 $ mix phx.new mvp --live
 $ cd mvp
 $ mix ecto.create
 $ mix phx.gen.live Blog Post posts content:text
 $ mix ecto.migrate
+```
 
 * Update router and add posts routes
 * Update layout to add posts menu
 * Update post schema, :string -> :binary
 
+```
 $ iex -S mix.phx.server
+```
 
 * Navigate to localhost:4000/posts
 * Create a new post
